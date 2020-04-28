@@ -1,4 +1,4 @@
-//TEST
+//TEST1
 node{
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')), parameters([booleanParam(defaultValue: false, description: 'Need to upload artifact?', name: 'upload_artifact'), booleanParam(defaultValue: false, description: 'Need to download artifact?', name: 'download_artifact')]), pipelineTriggers([])])
     deleteDir()
